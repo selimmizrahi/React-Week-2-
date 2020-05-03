@@ -1,10 +1,13 @@
 import React from "react";
-import Api from "./components/api"
-// import Form from './day2/Ex4.Geekout/form'
+import "./App.css";
+import Api from "./components/api.jsx";
 
 function App() {
   return (
-    <Api></Api>
-    );
+    <div className="App">
+      <Api></Api>
+    </div>
+  );
 }
+
 export default App;
