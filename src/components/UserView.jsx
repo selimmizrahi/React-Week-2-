@@ -1,12 +1,16 @@
 import React from "react";
 
 const UserView = (props) => {
-  const { name, avatar } = props;
+  const { id, avatar, name, deleteFunction } = props;
   return (
-    <div>
-      <h3>{name}</h3>
+    <>
+      <h3>{id}</h3>
       <img src={avatar} alt={name} />
-    </div>
+
+      <button value={id} onClick={deleteFunction}>
+        Delete Picture
+      </button>
+    </>
   );
 };
 
